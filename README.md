@@ -1,72 +1,166 @@
-Banking Database SQL Project
+Banking SQL Database Project
+Project Overview:
 
-A SQL-based banking database project designed to simulate a real-world banking system.
-This project demonstrates how relational databases manage customers, accounts, transactions, and financial operations.
+This project is a Banking SQL Database System designed to simulate real-world banking operations. It focuses on managing customer data, bank accounts, and financial transactions using structured SQL queries.
+The project demonstrates how SQL can be used for data storage, management, and analysis in a banking environment.
 
-It is ideal for practicing SQL queries, database design, and data analysis used in real banking environments.
+ Project Objectives:
 
- Project Objective
-The goal of this project is to:
-
-Design a relational banking database
+Design a relational database system
 
 Store and manage customer and account information
 
-Analyze financial transactions
+Track and analyze financial transactions
 
-Practice SQL joins, aggregations, and analytical queries
+Practice SQL concepts like JOIN, GROUP BY, and aggregations
 
 Build a portfolio-ready SQL project
 
+Database Schema
 
-Database Schema:
-The project includes 6 main tables representing core banking operations.
+The project includes the following tables:
 
-Table Name	Description:
-Customer Stores Customer personal details
+1. Customer
 
-bank_account	Stores account information
+Stores customer details:
 
-relationship_details	Stores linked/joint accounts
+Cust_id (Primary Key)
 
-Account_transaction	Stores transaction records
+Cust_name
 
-Customer_messages	Stores customer alerts and notifications
+Address
 
-Interest_rate	Stores interest rates for account types
+State_code
 
-SQL Concepts Used
-This project demonstrates several SQL concepts:
+Contact
 
-Database Design
+2. Bank_Account
 
-Table Creation
+Stores account information:
 
-Data Insertion
+cust_id
 
-SQL Joins
+Account_number
 
-Aggregation Functions
+Account_type
 
-Filtering with WHERE
+Balance_amount
 
-GROUP BY Analysis
+Account_Status
 
-Business Data Queries
+Relationship
 
-Real-World Business Insights:
-Using this database we can answer questions like:
+3. Relationship_Details
 
-Which customers have the highest transactions?
+Stores linked account details:
 
-Which transaction channels are used most?
+Cust_id
 
-Which accounts are inactive?
+Account_number
 
-Which account types have higher balances?
+Account_type
 
-How do interest rates change over time?
+Linking_account_number
+
+4. Account_Transaction
+
+Stores transaction data:
+
+Account_number
+
+Transaction_amount
+
+Transaction_channel
+
+Province
+
+Transaction_Date
+
+5. Customer_Messages
+
+Stores customer notifications:
+
+Event
+
+Customer_message
+
+Notice_delivery_mode
+
+6. Interest_Rate
+
+Stores interest rate data:
+
+Account_type
+
+Interest_rate
+
+Month
+
+Year
+
+🛠️ SQL Skills Used
+
+CREATE TABLE
+
+INSERT INTO
+
+SELECT Queries
+
+WHERE Clause
+
+JOIN Operations
+
+GROUP BY
+
+Aggregate Functions (SUM, AVG, COUNT)
+
+CASE Statements
+
+Sample Analysis Performed
+
+Total transaction amount per customer
+
+Average account balance by customer
+
+First-quarter transaction analysis
+
+Filtering transactions by date
+
+Identifying customers with credit cards
 
 
-Tools Used: 
-MySQL,    SQL: Relational Database Design
+
+Future Improvements
+
+Add Loan Management System
+
+Implement Fraud Detection Analysis
+
+Include Bank Branch Data
+
+Create dashboards using Power BI / Tableau
+
+
+Banking SQL-Project/
+│
+├── README.md
+├── insert_bank_data.sql
+├── Analysis_queries.sql
+└── Img/
+
+What I Learned
+
+Designing relational databases
+
+Writing complex SQL queries
+
+Data analysis using SQL
+Understanding real-world banking data
+
+ Conclusion:
+
+This project showcases my ability to work with SQL, relational databases, and data analysis, making it a strong addition to my Data Analyst portfolio.
+
+Feedback::
+
+I would appreciate your feedback and suggestions to improve this project!
