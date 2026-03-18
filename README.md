@@ -69,6 +69,4 @@ How do interest rates change over time?
 
 
 Tools Used: 
-MySQL
-, SQL:
-, Relational Database Design
+MySQL,    SQL: Relational Database Design
