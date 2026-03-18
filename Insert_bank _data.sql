@@ -1,5 +1,7 @@
 -- Creating the bank_customer database
 Create database Banking_Database;
+
+#show Database name
 use Banking_Database; 
 
 -- Create the customer_table
